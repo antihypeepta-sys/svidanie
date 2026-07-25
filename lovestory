@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Для Ирачки ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+
+background:
+linear-gradient(180deg,#090909,#111,#1a1a1a);
+
+overflow-x:hidden;
+
+color:white;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+text-align:center;
+
+position:relative;
+
+}
+
+h1{
+
+font-family:"Great Vibes";
+
+font-size:60px;
+
+color:#ffd98b;
+
+margin-bottom:20px;
+
+text-shadow:0 0 20px rgba(255,215,120,.4);
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+opacity:.9;
+
+margin-bottom:15px;
+
+}
+
+.desc{
+
+max-width:700px;
+
+line-height:1.8;
+
+font-size:18px;
+
+opacity:.85;
+
+}
+
+button{
+
+margin-top:45px;
+
+padding:18px 45px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#d4af37,#ffdf7b);
+
+color:#111;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 10px 30px rgba(212,175,55,.35);
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+.petals{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:1;
+
+}
+
+.petal{
+
+position:absolute;
+
+width:14px;
+
+height:14px;
+
+background:#ff4d6d;
+
+border-radius:60% 40% 60% 40%;
+
+opacity:.7;
+
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-100px) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(360deg);
+
+}
+
+}
+
+.card{
+
+width:92%;
+
+max-width:850px;
+
+margin:40px auto;
+
+padding:45px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border-radius:30px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+text-align:center;
+
+}
+
+.card h2{
+
+font-family:"Great Vibes";
+
+font-size:50px;
+
+color:#ffd98b;
+
+margin-bottom:20px;
+
+}
+
+.card p{
+
+font-size:19px;
+
+line-height:2;
+
+margin-bottom:15px;
+
+}
+
+.date{
+
+font-size:32px;
+
+margin-top:30px;
+
+font-weight:bold;
+
+color:#ffd98b;
+
+}
+
+.hidden{
+
+display:none;
+
+}
+
+.countdown{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.time{
+
+background:#181818;
+
+padding:20px;
+
+border-radius:20px;
+
+min-width:90px;
+
+}
+
+.time span{
+
+display:block;
+
+font-size:34px;
+
+font-weight:bold;
+
+color:#ffd98b;
+
+}
+
+.time small{
+
+opacity:.8;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="petals" id="petals"></div>
+
+<section class="hero" id="hero">
+
+<h1>Самой восхитительной<br>и любимой жене ❤️</h1>
+
+<div class="subtitle">
+
+Ирачка...
+
+</div>
+
+<div class="desc">
+
+Это приглашение создано только для тебя.
+
+Потому что каждый день рядом с тобой —
+
+лучший день моей жизни.
+
+</div>
+
+<button onclick="openLetter()">
+
+Открыть приглашение
+
+</button>
+
+</section>
+
+<div id="letter" class="hidden">
+
+<div class="card">
+
+<h2>💌 Приглашение</h2>
+<p>
+
+Моя любимая Ирачка...
+
+</p>
+
+<p>
+
+Иногда среди обычных дней хочется остановить время.
+
+Забыть обо всех заботах.
+
+Просто смотреть в твои глаза.
+
+Держать тебя за руку.
+
+Обнимать тебя крепче.
+
+И понимать,
+
+что именно рядом с тобой
+
+я по-настоящему счастлив.
+
+</p>
+
+<p>
+
+Поэтому...
+
+</p>
+
+<h2 style="margin-top:25px;">
+
+Я приглашаю тебя
+
+на особенное свидание ❤️
+
+</h2>
+
+<div class="date">
+
+📅 1 августа
+
+<br><br>
+
+🌙 Вечером
+
+</div>
+
+<div class="countdown">
+
+<div class="time">
+
+<span id="days">00</span>
+
+<small>Дней</small>
+
+</div>
+
+<div class="time">
+
+<span id="hours">00</span>
+
+<small>Часов</small>
+
+</div>
+
+<div class="time">
+
+<span id="minutes">00</span>
+
+<small>Минут</small>
+
+</div>
+
+<div class="time">
+
+<span id="seconds">00</span>
+
+<small>Секунд</small>
+
+</div>
+
+</div>
+
+<p style="margin-top:40px;font-size:22px;">
+
+📍 Место пока останется маленьким секретом...
+
+</p>
+
+<p>
+
+Но обещаю,
+
+этот вечер будет только нашим.
+
+</p>
+
+<button onclick="showGallery()">
+
+Посмотреть наши счастливые моменты ❤️
+
+</button>
+
+</div>
+
+<div id="gallery" class="hidden">
+
+<div class="card">
+
+<h2>Наши счастливые моменты 📸</h2>
+
+<p>
+
+Каждая фотография напоминает,
+
+как сильно я люблю тебя.
+
+</p>
+
+<img id="photo"
+
+src="images/photo1.jpg"
+
+style="width:100%;max-width:650px;border-radius:25px;box-shadow:0 15px 35px rgba(0,0,0,.5);margin-top:25px;">
+
+<br>
+
+<button onclick="nextPhoto()">
+
+Следующая ❤️
+
+</button>
+
+<br><br>
+
+<button onclick="showLove()">
+
+Последнее послание 💌
+
+</button>
+
+</div>
+
+</div>
+
+<div id="love" class="hidden">
+
+<div class="card">
+
+<h2>❤️</h2>
+
+<p>
+
+Спасибо тебе...
+
+За каждую улыбку.
+
+За каждое объятие.
+
+За поддержку.
+
+За заботу.
+
+За нашу любовь.
+
+</p>
+
+<p>
+
+Ты — лучшее,
+
+что случилось в моей жизни.
+
+</p>
+
+<p style="font-size:26px;color:#ffd98b;">
+
+Я люблю тебя больше,
+
+чем могут передать любые слова.
+
+</p>
+
+<h2>
+
+До встречи,
+
+моя любимая Ирачка ❤️
+
+</h2>
+
+</div>
+
+</div>
+<script>
+
+const targetDate = new Date("2026-08-01T19:00:00").getTime();
+
+function updateCountdown(){
+
+const now = new Date().getTime();
+
+const distance = targetDate-now;
+
+if(distance<0){
+
+document.getElementById("days").innerHTML="00";
+document.getElementById("hours").innerHTML="00";
+document.getElementById("minutes").innerHTML="00";
+document.getElementById("seconds").innerHTML="00";
+
+return;
+
+}
+
+const days=Math.floor(distance/(1000*60*60*24));
+
+const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+
+const seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML=days;
+
+document.getElementById("hours").innerHTML=hours;
+
+document.getElementById("minutes").innerHTML=minutes;
+
+document.getElementById("seconds").innerHTML=seconds;
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+function openLetter(){
+
+document.getElementById("hero").style.display="none";
+
+document.getElementById("letter").style.display="block";
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+function showGallery(){
+
+document.getElementById("letter").style.display="none";
+
+document.getElementById("gallery").style.display="block";
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+function showLove(){
+
+document.getElementById("gallery").style.display="none";
+
+document.getElementById("love").style.display="block";
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+let currentPhoto=1;
+
+function nextPhoto(){
+
+currentPhoto++;
+
+if(currentPhoto>5){
+
+currentPhoto=1;
+
+}
+
+document.getElementById("photo").src="images/photo"+currentPhoto+".jpg";
+
+}
+for(let i=0;i<35;i++){
+
+const petal=document.createElement("div");
+
+petal.className="petal";
+
+petal.style.left=Math.random()*100+"%";
+
+petal.style.animationDuration=(6+Math.random()*8)+"s";
+
+petal.style.animationDelay=Math.random()*8+"s";
+
+petal.style.opacity=Math.random();
+
+petal.style.transform="scale("+(0.5+Math.random())+")";
+
+document.getElementById("petals").appendChild(petal);
+
+}
+
+</script>
+
+</body>
+
+</html>
